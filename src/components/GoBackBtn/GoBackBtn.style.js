@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const GoBack = styled(Link)`
+const GoBack = styled(Link)`
   text-transform: uppercase;
   text-decoration-line: none;
   display: inline-block;
@@ -18,3 +18,5 @@ export const GoBack = styled(Link)`
     box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.55);
   }
 `;
+
+export default GoBack;

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Img, Input, SearchForm, Button, Wrapper } from './SearchBar.styled';
 import { useSearchParams } from 'react-router-dom';
 
-function Searchbar({ disabled }) {
+function Searchbar({ defaultValue, disabled }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   function handleSubmit(e) {
@@ -37,6 +37,7 @@ function Searchbar({ disabled }) {
           placeholder="Search movies"
           name="search"
           disabled={disabled}
+          defaultValue={defaultValue}
         />
       </SearchForm>
     </Wrapper>
@@ -45,6 +46,7 @@ function Searchbar({ disabled }) {
 
 Searchbar.propTypes = {
   disabled: PropTypes.bool.isRequired,
+  defaultValue: PropTypes.string,
 };
 
 export default Searchbar;

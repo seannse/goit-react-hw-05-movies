@@ -37,7 +37,7 @@ function MoviesPage() {
 
   return (
     <Container>
-      <SearchBar disabled={disabled} />
+      <SearchBar defaultValue={query} disabled={disabled} />
       {loading && <Loader />}
       {!!movies?.length && <MovieList array={movies} />}
       {movies && !movies.length && <p>Nothing found</p>}
