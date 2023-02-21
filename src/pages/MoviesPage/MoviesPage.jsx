@@ -11,7 +11,7 @@ function MoviesPage() {
   const [disabled, setDisabled] = useState(false);
   const [movies, setMovies] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const query = searchParams.get('query');
 
