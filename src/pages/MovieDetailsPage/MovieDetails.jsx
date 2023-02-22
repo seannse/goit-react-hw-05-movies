@@ -15,6 +15,7 @@ function MovieDetails() {
   const [loading, setLoading] = useState(false);
 
   const location = useLocation();
+  console.log(location);
 
   useEffect(() => {
     getDetails(movieId);
@@ -62,10 +63,14 @@ function MovieDetails() {
         <h3>Aditional information</h3>
         <ul>
           <li>
-            <Link to="cast">Cast</Link>
+            <Link to="cast" state={{ from: backPath }}>
+              Cast
+            </Link>
           </li>
           <li>
-            <Link to="reviews">Reviews</Link>
+            <Link to="reviews" state={{ from: backPath }}>
+              Reviews
+            </Link>
           </li>
         </ul>
       </Aditional>
