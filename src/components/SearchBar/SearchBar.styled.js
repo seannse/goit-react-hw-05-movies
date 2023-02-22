@@ -9,12 +9,12 @@ const Wrapper = styled.div`
 const SearchForm = styled.form`
   display: flex;
   align-items: center;
+  margin: 0 auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   background-color: #fff;
-  border-radius: 3px;
   overflow: hidden;
-  border: 2px solid hsl(234deg 48% 34%);
+  border-bottom: 2px solid hsl(234deg 48% 34%);
 `;
 
 const Button = styled.button`
@@ -26,8 +26,7 @@ const Button = styled.button`
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
-  border-right: 2px solid hsl(234deg 48% 34%);
-
+  background-color: transparent;
   :hover {
     opacity: 1;
   }

@@ -23,13 +23,13 @@ function ReviewsPage() {
       console.log(error.message);
     }
   }
-  if (!reviews) return null;
+  // if (!reviews) return null;
 
   return (
     <>
       <h2>Reviews</h2>
       <List>
-        {reviews.length > 0 ? (
+        {reviews?.length > 0 ? (
           reviews.map(({ author, content, id }) => (
             <li key={id}>
               <b>{author}</b>

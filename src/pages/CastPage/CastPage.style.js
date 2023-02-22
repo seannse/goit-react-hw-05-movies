@@ -5,6 +5,7 @@ export const List = styled.ul`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  min-height: 100vh;
 `;
 export const Item = styled.li`
   margin-left: 0;
